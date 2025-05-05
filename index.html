@@ -67,6 +67,22 @@
     <link href="css/styles.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="cookie-popup.css" />
+
+    <script>
+      document
+        .getElementById("accept-cookies")
+        .addEventListener("click", function () {
+          document.getElementById("cookie-popup").style.display = "none";
+          localStorage.setItem("cookiesAccepted", "true");
+        });
+
+      // Hide the popup if already accepted
+      window.addEventListener("DOMContentLoaded", function () {
+        if (localStorage.getItem("cookiesAccepted") === "true") {
+          document.getElementById("cookie-popup").style.display = "none";
+        }
+      });
+    </script>
   </head>
   <body class="d-flex flex-column h-100">
     <main class="flex-shrink-0">
@@ -74,7 +90,7 @@
       <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
         <div class="container px-5">
           <a class="navbar-brand" href="index.html"
-            ><span class="fw-bolder text-primary">Start Bootstrap</span></a
+            ><span class="fw-bolder text-primary">Emma's Portfolio</span></a
           >
           <button
             class="navbar-toggler"
@@ -482,11 +498,11 @@
                 <h2 class="display-5 fw-bolder">
                   <span class="text-gradient d-inline">About Me</span>
                 </h2>
-                <p class="lead fw-light mb-4">
-                  I am passionate about using data to tell a stories.
+                <p class="lead fw-light mb-3">
+                  I am passionate about using data to tell stories.
                 </p>
 
-                <div class="d-flex justify-content-center fs-2 gap-4">
+                <div class="d-flex justify-content-center fs-4 gap-4">
                   <a
                     class="text-gradient"
                     href="www.linkedin.com/in/emma-l-chase"
