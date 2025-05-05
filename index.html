@@ -67,22 +67,6 @@
     <link href="css/styles.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="cookie-popup.css" />
-
-    <script>
-      document
-        .getElementById("accept-cookies")
-        .addEventListener("click", function () {
-          document.getElementById("cookie-popup").style.display = "none";
-          localStorage.setItem("cookiesAccepted", "true");
-        });
-
-      // Hide the popup if already accepted
-      window.addEventListener("DOMContentLoaded", function () {
-        if (localStorage.getItem("cookiesAccepted") === "true") {
-          document.getElementById("cookie-popup").style.display = "none";
-        }
-      });
-    </script>
   </head>
   <body class="d-flex flex-column h-100">
     <main class="flex-shrink-0">
