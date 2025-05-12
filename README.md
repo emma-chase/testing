@@ -1,4 +1,8 @@
 # Personal Portfolio
 This is the code I used to create emmalchase.com!
 
-I utilized a Bootstrap template for much of the CSS code. This project aims to highlight my education, interests, and experience.
+### About the Code
+I utilized a Bootstrap template for much of the CSS code. HTML was the primary coding language for the actual development of the website.
+
+### Project Aims
+This project aims to highlight my education, interests, and experience. 👩🏼‍🎓☺️
